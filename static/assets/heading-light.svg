@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="984" height="374" viewBox="0 0 984 374">
+  <defs>
+    <clipPath id="clip-heading-light">
+      <rect width="984" height="374"/>
+    </clipPath>
+  </defs>
+  <g id="heading-light" clip-path="url(#clip-heading-light)">
+    <g id="landing" transform="translate(-131 -264)">
+      <text id="landing__sub-heading" transform="translate(237 603)" fill="#fff" font-size="100" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Tech Conference</tspan></text>
+      <g id="landing__heading" transform="translate(22)">
+        <text id="N" transform="translate(237 464)" fill="#fff" font-size="200" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">N</tspan></text>
+        <text id="X" transform="translate(422 464)" fill="#f04d7f" font-size="200" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">X</tspan></text>
+        <text id="N-2" data-name="N" transform="translate(580 464)" fill="#fff" font-size="200" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">N</tspan></text>
+        <text id="W" transform="translate(765 464)" fill="#fff" font-size="200" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">W</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
