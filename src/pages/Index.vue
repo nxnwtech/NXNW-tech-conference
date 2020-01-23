@@ -83,15 +83,6 @@
         </section>
       </Layout>
     </div>
-
-    <!-- <div v-bind:class="{ overlay: showLoader, hideLoader: !showLoader }" class="overlay">
-      <div class="loadingContainer">
-        <div class="ball1"></div>
-        <div class="ball2"></div>
-        <div class="ball3"></div>
-        <div class="ball4"></div>
-      </div>
-    </div> -->
   </div>
 </template>
 
