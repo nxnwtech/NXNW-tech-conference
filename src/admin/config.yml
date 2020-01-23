@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: master 
-  repo: DaraghColl/nxnw
+  repo: nxnwtech/NXNW-tech-conference
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
