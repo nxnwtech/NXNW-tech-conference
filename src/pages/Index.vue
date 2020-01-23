@@ -1,14 +1,13 @@
 <template>
   <div>
-    <div v-bind:class="{ hidden: showLoader }">
+    <div>
         <Navbar/>
       <section id="landing-section" class="landing bg-color--primary">
         <div class="landing__hamburger">
           <g-image src="/assets/hamburger-light.svg" alt="navigation menu icon" />
         </div>
-        <transition name="fade">
+        <transition appear name="fade">
         <g-image
-          v-if="!showLoader"
           class="landing__logo"
           src="/assets/heading-light.svg"
           alt="nxnw heading logo"
@@ -85,14 +84,14 @@
       </Layout>
     </div>
 
-    <div v-bind:class="{ overlay: showLoader, hideLoader: !showLoader }" class="overlay">
+    <!-- <div v-bind:class="{ overlay: showLoader, hideLoader: !showLoader }" class="overlay">
       <div class="loadingContainer">
         <div class="ball1"></div>
         <div class="ball2"></div>
         <div class="ball3"></div>
         <div class="ball4"></div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -201,14 +200,10 @@ export default {
   },
   data() {
     return {
-      showLoader: true,
       showPapers: true,
       showSpeakers: true,
       showSchedule: true, 
     };
-  },
-  mounted() {
-    this.loader();
   },
   created() {
     if (this.$page) {
@@ -221,11 +216,6 @@ export default {
   },
 
   methods: {
-    loader() {
-      setTimeout(() => {
-        this.showLoader = false;
-      }, 2000);
-    }
   }
 };
 </script>
@@ -329,9 +319,5 @@ export default {
   background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
   transition: 0.5s;
-}
-
-.hideLoader {
-  display: none;
 }
 </style>
