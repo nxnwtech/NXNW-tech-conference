@@ -2,7 +2,7 @@
   <div class="speakers-card card-rounded shadow--large">
     <div class="speakers-card__body">
       <g-image
-        class="speakers-card__image object-cover mx-auto"
+        class="speakers-card__image mx-auto"
         :src="speaker.profileImage"
         alt="speaker profile picture"
       />
@@ -45,6 +45,7 @@ export default {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
+    object-fit: cover;
   }
 
   .speakers-card__subject {
