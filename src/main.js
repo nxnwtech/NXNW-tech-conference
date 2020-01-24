@@ -15,6 +15,8 @@ import vWow from 'v-wow'
 
 import VueShowdown from 'vue-showdown'
 
+import VueScrollTo from 'vue-scrollto' 
+
 config.autoAddCss = false;
 library.add(faGithubSquare, faTwitterSquare, faLinkedin, faReplyd)
 
@@ -31,4 +33,5 @@ export default function (Vue, { router, head, isClient }) {
       emoji: false,
     },
   })
+  Vue.use(VueScrollTo)
 }

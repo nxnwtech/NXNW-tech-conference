@@ -3,11 +3,12 @@
     <!-- <div class="navbar__logo">LOGO</div> -->
     <div class="container">
       <div class="navbar__links">
-        <div class="navbar__item">About</div>
-        <div class="navbar__item">Speakers</div>
-        <div class="navbar__item">Schedule</div>
-        <div class="navbar__item">Code Of Conduct</div>
-        <div class="navbar__item">FAQ</div>
+        <a href="#" class="navbar__item" v-scroll-to="'#about-section'">About</a>
+        <a href="#" class="navbar__item" v-scroll-to="'#call-to-papers-section'">Call to Papers</a>
+        <a href="#" class="navbar__item" v-scroll-to="'#speakers-section'">Speakers</a>
+        <a href="#" class="navbar__item" v-scroll-to="'#schedule-section'">Schedule</a>
+        <a href="#" class="navbar__item" v-scroll-to="'#conduct-section'">Code Of Conduct</a>
+        <a href="#" class="navbar__item" v-scroll-to="'#call-to-papers-section'">FAQ</a>
       </div>
     </div>
   </nav>
