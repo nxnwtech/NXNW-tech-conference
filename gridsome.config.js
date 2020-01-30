@@ -22,6 +22,14 @@ module.exports = {
         baseDir: './content/speakers',
       }
     },
+     // CallForProposalsIntro
+     {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'callForProposalsIntro',
+        baseDir: './content/callForProposalsIntro',
+      }
+    },
     // Call To Pages 
     {
       use: '@gridsome/vue-remark',
