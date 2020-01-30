@@ -22,6 +22,16 @@ collections:
       - {label: "Linkedin", name: "linkedin", widget: "string"}
       - {label: "Twitter", name: "twitter", widget: "string"}
 
+  - name: "callForProposalsIntro"
+    label: "Call For Proposals"
+    folder: "content/callForProposalsIntro"
+    create: false
+    identifier_field: title
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", default: "Call For Proposals"}
+      - {label: "Content", name: "content", widget: "markdown"}
+
   - name: "callToPapers"
     label: "Call To Papers"
     folder: "content/callToPapers"

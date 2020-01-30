@@ -31,6 +31,19 @@
             </div>
           </div>
         </section>
+        <!-- CALLFORPROPOSALSINTRO -->
+        <section id="callforproposalsintro-section" class="callForProposalsIntro">
+          <div v-for="edge in $page.callForProposalsIntro.edges" :key="edge.node.id">
+            <div class="text-center">
+              <h1 class="section-heading text-center font-bold">{{ edge.node.title}}</h1>
+              <VueShowdown
+                :markdown="edge.node.content"
+                flavor="github"
+                :options="{ emoji: false }"
+              />
+            </div>
+          </div>
+        </section>
         <!-- CALL TO PAPERS -->
         <section id="call-to-papers-section" class="papers" v-if="showPapers">
           <div class="text-center">
@@ -88,6 +101,15 @@
 
 <page-query>
   query callToPapers {
+        callForProposalsIntro: allCallForProposalsIntro {
+      edges {
+        node {
+          id,
+          title,
+          content
+        }
+      }
+    }
     callToPapers: allCallToPapers {
       edges {
         node {
@@ -280,6 +302,14 @@ export default {
 .schedule {
   margin-top: 3em;
   margin-bottom: 3em;
+}
+
+.callForProposalsIntro {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.2em;
 }
 
 // about
