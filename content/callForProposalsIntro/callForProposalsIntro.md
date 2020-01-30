@@ -1,5 +1,5 @@
 ---
-title: About NXNW
+title: Call For Proposals
 content: >-
   **Test from new repo!**
 
