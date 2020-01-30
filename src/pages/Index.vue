@@ -101,7 +101,7 @@
 
 <page-query>
   query callToPapers {
-        callForProposalsIntro: allCallForProposalsIntro {
+    callForProposalsIntro: allCallForProposalsIntro {
       edges {
         node {
           id,
