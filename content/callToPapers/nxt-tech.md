@@ -1,14 +1,16 @@
 ---
-name: Nxt tech
-description: New and emerging tech
+name: NeXt Tech
+description: New and Emerging Technologies
 trackImage: /uploads/nxt-tech-svg.svg
 Item:
   - topic: IoT
-  - topic: AI - Machine Learning
+  - topic: AI and Data Science
   - topic: Virtual/Augmented Reality
-  - topic: DevOps - CI/CD - Automation
-  - topic: Cloud Native - Severless - Container
+  - topic: DevOps
+  - topic: Cloud
+  - topic: Mobile and Web Development
   - topic: Cyber Security
   - topic: Gaming
+  - topic: etc.
 ---
 
