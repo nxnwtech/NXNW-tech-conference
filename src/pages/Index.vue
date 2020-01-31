@@ -20,9 +20,8 @@
         <!-- ABOUT -->
         <section id="about-section" class="about">
           <div v-for="edge in $page.about.edges" :key="edge.node.id">
-            <div class="text-center">
-              <h1 class="section-heading text-center font-bold">{{ edge.node.title}}</h1>
-              <!-- <div>{{ edge.node.content }}</div> -->
+            <h1 class="section-heading text-center font-bold">{{ edge.node.title}}</h1>
+            <div class="text-left">
               <VueShowdown
                 :markdown="edge.node.content"
                 flavor="github"
