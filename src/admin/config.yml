@@ -97,7 +97,13 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string", default: "Code of Conduct"}
-      - {label: "Content", name: "content", widget: "markdown"}
+      - {label: "Intro", name: "intro", widget: "markdown"}
+      - {label: "Quick Title", name: "quickTitle", widget: "string", default: "The Quick Version"}
+      - {label: "Quick Version", name: "quickVersion", widget: "markdown"}
+      - {label: "Long Title", name: "longTitle", widget: "string", default: "The Less Quick Version"}
+      - {label: "Long Version", name: "longVersion", widget: "markdown"}
+      - {label: "Credits", name: "credits", widget: "markdown"}
+
 
 
 

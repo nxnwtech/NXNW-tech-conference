@@ -14,6 +14,19 @@ body {
   text-align: center;
 }
 
+.sub-section-heading {
+  margin-bottom: 1em;
+  border-bottom: 3px solid #FC5185;
+  font-size: 1.25em;
+  display: inline-block;
+  text-align: center;
+}
+
+.credits{
+  font-size: smaller;
+  font-weight: 400;
+  text-align: left;
+}
 
 /***** UTILITY *****/
 .container{

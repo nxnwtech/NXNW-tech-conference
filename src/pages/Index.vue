@@ -82,16 +82,45 @@
             />
           </div>
         </section>
-
+ intro,
+          quickTitle,
+          quickVersion,
+          longTitle,
+          longVersion,
+          credits
         <section id="conduct-section" class="conduct">
           <div v-for="edge in $page.codeOfConduct.edges" :key="edge.node.id">
             <div class="text-center">
               <h1 class="section-heading text-center font-bold">{{ edge.node.title}}</h1>
               <VueShowdown
-                :markdown="edge.node.content"
+                :markdown="edge.node.intro"
                 flavor="github"
                 :options="{ emoji: false }"
               />
+            </div>
+            <div class="text-center">
+              <h1 class="sub-section-heading text-center font-bold">{{ edge.node.quickTitle}}</h1>
+              <VueShowdown
+                :markdown="edge.node.quickVersion"
+                flavor="github"
+                :options="{ emoji: false }"
+              />
+            </div>
+            <div class="text-center">
+              <h1 class="sub-section-heading text-center font-bold">{{ edge.node.longTitle}}</h1>
+              <VueShowdown
+                :markdown="edge.node.longVersion"
+                flavor="github"
+                :options="{ emoji: false }"
+              />
+            </div>
+            <div class="credits">
+              <VueShowdown
+                  :markdown="edge.node.credits"
+                  flavor="github"
+                  :options="{ emoji: false }"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -178,12 +207,17 @@
         node {
           id,
           title,
-          content
+          intro,
+          quickTitle,
+          quickVersion,
+          longTitle,
+          longVersion,
+          credits
         }
       }
     }
   }
-
+      
 </page-query>
 
 <script>
