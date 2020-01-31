@@ -82,12 +82,6 @@
             />
           </div>
         </section>
- intro,
-          quickTitle,
-          quickVersion,
-          longTitle,
-          longVersion,
-          credits
         <section id="conduct-section" class="conduct">
           <div v-for="edge in $page.codeOfConduct.edges" :key="edge.node.id">
             <div class="text-center">
