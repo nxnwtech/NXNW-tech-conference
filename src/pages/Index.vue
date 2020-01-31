@@ -13,7 +13,7 @@
           alt="nxnw heading logo"
         />
         </transition>
-        <button class="btn btn--primary">Get Tickets</button>
+        <!-- <button class="btn btn--primary">Get Tickets</button> -->
       </section>
       <Layout>
         <quickInfoBar/>
@@ -23,7 +23,7 @@
             <div class="text-center ">
             <h1 class="section-heading font-bold">{{ edge.node.title}}</h1>
             </div>
-            <div class="text-center">
+            <div class="text-left">
               <VueShowdown
                 :markdown="edge.node.content"
                 flavor="github"
@@ -37,6 +37,8 @@
           <div v-for="edge in $page.callForProposalsIntro.edges" :key="edge.node.id">
             <div class="text-center">
               <h1 class="section-heading text-center font-bold">{{ edge.node.title}}</h1>
+            </div>
+            <div class="text-left">  
               <VueShowdown
                 :markdown="edge.node.content"
                 flavor="github"
@@ -82,26 +84,33 @@
             />
           </div>
         </section>
+         <!-- Code of Conduct-->
         <section id="conduct-section" class="conduct">
           <div v-for="edge in $page.codeOfConduct.edges" :key="edge.node.id">
             <div class="text-center">
-              <h1 class="section-heading text-center font-bold">{{ edge.node.title}}</h1>
+              <h1 class="section-heading font-bold">{{ edge.node.title}}</h1>
+            </div>  
+            <div class="text-left">
               <VueShowdown
                 :markdown="edge.node.intro"
                 flavor="github"
                 :options="{ emoji: false }"
               />
             </div>
-            <div class="text-center">
-              <h1 class="sub-section-heading text-center font-bold">{{ edge.node.quickTitle}}</h1>
+            <div class="text-left">
+              <h2 class="sub-section-heading font-bold">{{ edge.node.quickTitle}}</h2>
+            </div>
+            <div class="text-left">
               <VueShowdown
                 :markdown="edge.node.quickVersion"
                 flavor="github"
                 :options="{ emoji: false }"
               />
             </div>
-            <div class="text-center">
-              <h1 class="sub-section-heading text-center font-bold">{{ edge.node.longTitle}}</h1>
+            <div class="text-left">
+              <h2 class="sub-section-heading font-bold">{{ edge.node.longTitle}}</h2>
+            </div>
+            <div class="text-left">
               <VueShowdown
                 :markdown="edge.node.longVersion"
                 flavor="github"
