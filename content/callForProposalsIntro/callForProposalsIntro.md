@@ -1,13 +1,25 @@
 ---
 title: Call For Proposals
 content: >-
-  **Test from new repo!**
+  We are launching the conference with a **Call for Proposals** to ensure the
+  highest quality and best selection of speakers. We are looking forward to
+  speakers sharing their stories & experiences about successes, failures,
+  lessons learned, patterns & practices. 
+
+  We’re looking for technical and non-technical talks covering a broad range of
+  topics in the Information Technology space. As a community conference we are
+  encouraging **everyone from senior to newcomers from diverse backgrounds**. 
 
 
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia sapiente fuga,
-  nemo voluptatum animi perferendis doloremque earum totam aliquid corporis ipsa
-  dicta qui, aperiam nostrum quo. Vel ea quidem omnis aliquid obcaecati laborum
-  magni illo porro sed magnam, esse maxime quos nemo laudantium optio veniam
-  iure necessitatibus asperiores, officiis ad!
+  Talks can be 30 mins or 10 mins lightening talks.
+
+
+  The Call for Proposals will close on **16th March 2020**. 
+
+
+  We are now seeking talk proposals, suggested themes below.
+
+
+  We are looking forward to your proposals!
 ---
 
