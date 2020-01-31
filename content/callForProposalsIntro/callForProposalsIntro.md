@@ -9,15 +9,19 @@ content: >
   Technology space. As a community conference we are encouraging **everyone from
   senior to newcomers from diverse backgrounds**. 
 
+  <br/><br/>
 
   <center>Talks can be 30 mins or 10 mins lightening talks.</center>
 
+  <br/><br/>
 
   <center>The Call for Proposals will close on **16th March 2020**. </center>
 
+  <br/><br/>
 
   <center>We are now seeking talk proposals, suggested themes below.</center>
 
+  <br/><br/>
 
   <center>We are looking forward to your proposals!</center>
 ---
