@@ -1,27 +1,26 @@
 <template>
   <div>
     <div>
-        <Navbar/>
+      <Navbar />
       <section id="landing-section" class="landing bg-color--primary">
         <div class="landing__hamburger">
           <g-image src="/assets/hamburger-light.svg" alt="navigation menu icon" />
         </div>
         <transition appear name="fade">
-        <g-image
-          class="landing__logo"
-          src="/assets/heading-light.svg"
-          alt="nxnw heading logo"
-        />
+          <g-image 
+          class="landing__logo" 
+          src="/assets/logo.png" 
+          alt="nxnw heading logo" />
         </transition>
         <!-- <button class="btn btn--primary">Get Tickets</button> -->
       </section>
       <Layout>
-        <quickInfoBar/>
+        <quickInfoBar />
         <!-- ABOUT -->
         <section id="about-section" class="about">
           <div v-for="edge in $page.about.edges" :key="edge.node.id">
-            <div class="text-left ">
-            <h1 class="section-heading font-bold">{{ edge.node.title}}</h1>
+            <div class="text-left">
+              <h1 class="section-heading font-bold">{{ edge.node.title}}</h1>
             </div>
             <div class="text-left">
               <VueShowdown
@@ -38,7 +37,7 @@
             <div class="text-left">
               <h1 class="section-heading font-bold">{{ edge.node.title}}</h1>
             </div>
-            <div class="text-left">  
+            <div class="text-left">
               <VueShowdown
                 :markdown="edge.node.content"
                 flavor="github"
@@ -51,7 +50,7 @@
         <section id="call-to-papers-section" class="papers" v-if="showPapers">
           <!-- <div class="text-center">
             <h1 class="section-heading text-center font-bold">CALL TO PAPERS</h1>
-          </div> -->
+          </div>-->
           <div class="papers__grid">
             <CallToPapersListItem
               v-for="edge in $page.callToPapers.edges"
@@ -84,18 +83,14 @@
             />
           </div>
         </section>
-         <!-- Code of Conduct-->
+        <!-- Code of Conduct-->
         <section id="conduct-section" class="conduct">
           <div v-for="edge in $page.codeOfConduct.edges" :key="edge.node.id">
             <div class="text-left">
               <h1 class="section-heading font-bold">{{ edge.node.title}}</h1>
-            </div>  
+            </div>
             <div class="text-left">
-              <VueShowdown
-                :markdown="edge.node.intro"
-                flavor="github"
-                :options="{ emoji: false }"
-              />
+              <VueShowdown :markdown="edge.node.intro" flavor="github" :options="{ emoji: false }" />
             </div>
             <div class="text-left">
               <h2 class="sub-section-heading font-bold">{{ edge.node.quickTitle}}</h2>
@@ -119,11 +114,10 @@
             </div>
             <div class="credits">
               <VueShowdown
-                  :markdown="edge.node.credits"
-                  flavor="github"
-                  :options="{ emoji: false }"
-                />
-              </div>
+                :markdown="edge.node.credits"
+                flavor="github"
+                :options="{ emoji: false }"
+              />
             </div>
           </div>
         </section>
@@ -230,7 +224,6 @@ import Schedule from "~/components/Schedule.vue";
 import quickInfoBar from "~/components/quickInfoBar.vue";
 import Navbar from "~/components/Navbar.vue";
 
-
 export default {
   metaInfo: {
     title: "North by North West Tech Conference 2020",
@@ -253,7 +246,7 @@ export default {
     return {
       showPapers: true,
       showSpeakers: true,
-      showSchedule: true, 
+      showSchedule: true
     };
   },
   created() {
@@ -266,12 +259,14 @@ export default {
     }
   },
 
-  methods: {
-  }
+  methods: {}
 };
 </script>
 
 <style lang="scss">
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
 // landing
 .landing {
   height: 70vh;

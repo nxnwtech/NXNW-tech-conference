@@ -33,5 +33,9 @@ export default function (Vue, { router, head, isClient }) {
       emoji: false,
     },
   })
-  Vue.use(VueScrollTo)
+  Vue.use(VueScrollTo);
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap'
+  })
 }
