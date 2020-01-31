@@ -1,6 +1,6 @@
 ---
 title: Code Of Conduct
-content: |-
+intro: |-
   **This is our code of conduct testing**
 
   *Here is some italic*
