@@ -16,7 +16,10 @@ content: >-
   over will be donated to a local charity. Apart from sponsorship endorsements,
   the conference will not be affiliated with any commercial company.
 
+  <br/><br/>
 
   <center>Come enjoy the Xperience!</center>
+
+  <br/><br/>
 ---
 
