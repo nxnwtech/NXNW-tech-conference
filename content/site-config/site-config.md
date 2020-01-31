@@ -1,7 +1,7 @@
 ---
 title: Site Config
 papers: true
-speakers: true
-schedule: true
+speakers: false
+schedule: false
 ---
 
