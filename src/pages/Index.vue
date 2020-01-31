@@ -20,7 +20,7 @@
         <!-- ABOUT -->
         <section id="about-section" class="about">
           <div v-for="edge in $page.about.edges" :key="edge.node.id">
-            <div class="text-center ">
+            <div class="text-left ">
             <h1 class="section-heading font-bold">{{ edge.node.title}}</h1>
             </div>
             <div class="text-left">
@@ -35,8 +35,8 @@
         <!-- CALLFORPROPOSALSINTRO -->
         <section id="call-for-proposals-intro-section" class="callForProposalsIntro">
           <div v-for="edge in $page.callForProposalsIntro.edges" :key="edge.node.id">
-            <div class="text-center">
-              <h1 class="section-heading text-center font-bold">{{ edge.node.title}}</h1>
+            <div class="text-left">
+              <h1 class="section-heading font-bold">{{ edge.node.title}}</h1>
             </div>
             <div class="text-left">  
               <VueShowdown
@@ -87,7 +87,7 @@
          <!-- Code of Conduct-->
         <section id="conduct-section" class="conduct">
           <div v-for="edge in $page.codeOfConduct.edges" :key="edge.node.id">
-            <div class="text-center">
+            <div class="text-left">
               <h1 class="section-heading font-bold">{{ edge.node.title}}</h1>
             </div>  
             <div class="text-left">
