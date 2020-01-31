@@ -20,8 +20,10 @@
         <!-- ABOUT -->
         <section id="about-section" class="about">
           <div v-for="edge in $page.about.edges" :key="edge.node.id">
-            <h1 class="section-heading text-center font-bold">{{ edge.node.title}}</h1>
-            <div class="text-left">
+            <div class="text-center ">
+            <h1 class="section-heading font-bold">{{ edge.node.title}}</h1>
+            </div>
+            <div class="text-center">
               <VueShowdown
                 :markdown="edge.node.content"
                 flavor="github"
@@ -31,7 +33,7 @@
           </div>
         </section>
         <!-- CALLFORPROPOSALSINTRO -->
-        <section id="callforproposalsintro-section" class="callForProposalsIntro">
+        <section id="call-for-proposals-intro-section" class="callForProposalsIntro">
           <div v-for="edge in $page.callForProposalsIntro.edges" :key="edge.node.id">
             <div class="text-center">
               <h1 class="section-heading text-center font-bold">{{ edge.node.title}}</h1>
@@ -45,9 +47,9 @@
         </section>
         <!-- CALL TO PAPERS -->
         <section id="call-to-papers-section" class="papers" v-if="showPapers">
-          <div class="text-center">
+          <!-- <div class="text-center">
             <h1 class="section-heading text-center font-bold">CALL TO PAPERS</h1>
-          </div>
+          </div> -->
           <div class="papers__grid">
             <CallToPapersListItem
               v-for="edge in $page.callToPapers.edges"

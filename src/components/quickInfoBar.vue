@@ -6,15 +6,15 @@
     </div>
     <div class="info-box__item">
       <g-image class="info-icon" src="/assets/calendar.svg" alt="conferenece location" />
-      <h1 class="font-bold">20/20/20</h1>
+      <h1 class="font-bold">4th June 2020</h1>
     </div>
     <div class="info-box__item">
       <g-image class="info-icon" src="/assets/speakers.svg" alt="conferenece location" />
-      <h1 class="font-bold">12 Speakers</h1>
+      <h1 class="font-bold">16+ Speakers</h1>
     </div>
     <div class="info-box__item">
       <g-image class="info-icon" src="/assets/seats.svg" alt="conferenece location" />
-      <h1 class="font-bold">200 setas</h1>
+      <h1 class="font-bold">300 seats</h1>
     </div>
   </div>
 </template>

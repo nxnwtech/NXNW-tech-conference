@@ -4,11 +4,11 @@
     <div class="container">
       <div class="navbar__links">
         <a href="#" class="navbar__item" v-scroll-to="'#about-section'">About</a>
-        <a href="#" class="navbar__item" v-scroll-to="'#call-to-papers-section'">Call to Papers</a>
-        <a href="#" class="navbar__item" v-scroll-to="'#speakers-section'">Speakers</a>
-        <a href="#" class="navbar__item" v-scroll-to="'#schedule-section'">Schedule</a>
+        <a href="#" class="navbar__item" v-scroll-to="'#call-for-proposals-intro-section'">Call for Proposals</a>
+        <!-- <a href="#" class="navbar__item" v-scroll-to="'#speakers-section'">Speakers</a>
+        <a href="#" class="navbar__item" v-scroll-to="'#schedule-section'">Schedule</a> -->
         <a href="#" class="navbar__item" v-scroll-to="'#conduct-section'">Code Of Conduct</a>
-        <a href="#" class="navbar__item" v-scroll-to="'#call-to-papers-section'">FAQ</a>
+        <!-- <a href="#" class="navbar__item" v-scroll-to="'#call-to-papers-section'">FAQ</a> -->
       </div>
     </div>
   </nav>
