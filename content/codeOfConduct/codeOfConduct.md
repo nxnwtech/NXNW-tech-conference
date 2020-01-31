@@ -47,16 +47,16 @@ longVersion: >-
   and/or badges.
 
 
-  Conference staff will be happy to help participants contact hotel/venue
-  security or local law enforcement, provide escorts, or otherwise assist those
-  experiencing harassment to feel safe for the duration of the conference. We
-  value your attendance.
+  Conference staff will be happy to help participants contact venue security or
+  local law enforcement, provide escorts, or otherwise assist those experiencing
+  harassment to feel safe for the duration of the conference. We value your
+  attendance.
 
 
   We expect participants to follow these rules at conference and workshop venues
   and conference-related social events.
 credits: >-
-  *Original source and credit:<http://2012.jsconf.us/#/about>&[The Ada
-  Initiative](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy)*
+  *Attribution: This Code of Conduct was based on [Conference Code of
+  Conduct](https://confcodeofconduct.com/)*
 ---
 
