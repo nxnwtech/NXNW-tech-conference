@@ -82,10 +82,10 @@ body {
 
 .btn {
   color: #fff;
-  min-width: 130px;
-  border-radius: 3px;
-  padding: 5px;
   margin-top: 30px;
+  width: 200px;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .btn--primary {
@@ -190,9 +190,6 @@ p {
 button {
   background: transparent;
   padding: 0;
-  width: 200px;
-  padding: 15px;
-  border-radius: 5px;
 }
 
 fieldset,ol,ul {
