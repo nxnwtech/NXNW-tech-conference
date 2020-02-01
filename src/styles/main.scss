@@ -6,10 +6,6 @@ body {
   margin-bottom: 10vh;
 }
 
-p {
-  margin-top: 0.5em;
-}
-
 .section-heading {
   margin-bottom: 1em;
   // border-bottom: 4px solid #FC5185;
@@ -181,8 +177,14 @@ html {
   box-sizing: inherit
 }
 
-blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre {
+// removed p to apply seperate styling
+blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,pre {
   margin: 0
+}
+
+p {
+  margin: 0;
+  margin-top: 0.5em;
 }
 
 button {

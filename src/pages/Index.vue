@@ -32,9 +32,9 @@
             </div>
           </div>
         </section>
-        <div class="split-logo">
+        <!-- <div class="split-logo">
           <g-image src="/assets/x-shapes.svg" alt="navigation menu icon" />
-        </div>
+        </div> -->
         <!-- CALLFORPROPOSALSINTRO -->
         <section id="call-for-proposals-intro-section" class="callForProposalsIntro">
           <div v-for="edge in $page.callForProposalsIntro.edges" :key="edge.node.id">
@@ -66,9 +66,9 @@
             <button class="btn" @click="submitTalk()">Submit Proposal</button>
           </div>
         </section>
-        <div class="split-logo">
+        <!-- <div class="split-logo">
           <g-image src="/assets/x-shapes-2.svg" alt="navigation menu icon" />
-        </div>
+        </div> -->
 
         <!-- SPEAKERS -->
         <section id="speakers-section" class="speakers" v-if="showSpeakers">
