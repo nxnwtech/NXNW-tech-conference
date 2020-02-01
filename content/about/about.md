@@ -14,12 +14,9 @@ content: >-
   The conference will stay true to the NxNW goals of supporting and promoting
   the local tech community. The conference is not for profit, any monies left
   over will be donated to a local charity. Apart from sponsorship endorsements,
-  the conference will not be affiliated with any commercial company.
+  the conference will not be affiliated with any commercial company. 
 
-  <br/><br/>
 
   <center>Come enjoy the Xperience!</center>
-
-  <br/><br/>
 ---
 
