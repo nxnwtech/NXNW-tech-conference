@@ -1,6 +1,6 @@
 ---
 title: Call For Proposals
-content: >
+content: >-
   We are launching the conference with a **Call for Proposals** to ensure the
   highest quality and best selection of speakers. We are looking forward to
   speakers sharing their stories & experiences about successes, failures,
@@ -9,20 +9,13 @@ content: >
   Technology space. As a community conference we are encouraging **everyone from
   senior to newcomers from diverse backgrounds**. 
 
-  <br/><br/>
 
-  <center>Talks can be 30 mins or 10 mins lightening talks.</center>
+  Talks can be 30 mins or 10 mins lightening talks. 
 
-  <br/><br/>
 
-  <center>The Call for Proposals will close on **16th March 2020**. </center>
+  The Call for Proposals will close on **16th March 2020**. 
 
-  <br/><br/>
 
-  <center>We are now seeking talk proposals, suggested themes below.</center>
-
-  <br/><br/>
-
-  <center>We are looking forward to your proposals!</center>
+  We've listed suggested themes below and are looking forward to your proposals!
 ---
 
