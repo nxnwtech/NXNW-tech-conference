@@ -63,7 +63,7 @@
             />
           </div>
           <div class="papers-card__btn-wrapper">
-            <button class="btn" @click="submitTalk()">Submit Talk</button>
+            <button class="btn" @click="submitTalk()">Submit Proposal</button>
           </div>
         </section>
         <div class="split-logo">
@@ -236,12 +236,12 @@ import Navbar from "~/components/Navbar.vue";
 
 export default {
   metaInfo: {
-    title: "North by North West Tech Conference 2020",
+    title: "NxNWTech X 2020",
     meta: [
       {
         name: "description",
         content:
-          "Find information about the North by North West Tech Conference, including call to papers, speakers, schedule, and sponsors"
+          "Find information about the NxNWTech X 2020 Conference, including call to papers, speakers, schedule, and sponsors"
       }
     ]
   },
