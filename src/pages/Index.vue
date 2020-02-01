@@ -390,7 +390,7 @@ body {
 .split-logo {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   img {
     width: 20%;
     min-width: 100px;
