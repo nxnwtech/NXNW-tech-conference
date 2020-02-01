@@ -63,7 +63,8 @@
             />
           </div>
           <div class="papers-card__btn-wrapper">
-            <button class="btn">Submit Talk</button>
+            <!-- <button class="btn"><a>Submit Talk</button> -->
+            <a href="https://forms.gle/RZpPj7r1udgGqrCeA" class="btn btn-info" role="button"  target="_blank">Submit Talk</a>
           </div>
         </section>
         <div class="split-logo">
