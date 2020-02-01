@@ -63,7 +63,7 @@
             />
           </div>
           <div class="papers-card__btn-wrapper">
-            <button class="btn" href="https://forms.gle/RZpPj7r1udgGqrCeA" target="_blank">Submit Talk</button>
+            <button class="btn" @click="submitTalk()">Submit Talk</button>
           </div>
         </section>
         <div class="split-logo">
@@ -276,9 +276,14 @@ export default {
       console.log(this.isNavOpen);
       this.isNavOpen = !this.isNavOpen;
       console.log(this.isNavOpen);
-    }
+    },
+
+    submitTalk: function () {   
+          window.open("https://forms.gle/RZpPj7r1udgGqrCeA", "_blank");    
+      }
   }
 };
+
 </script>
 
 <style lang="scss">
