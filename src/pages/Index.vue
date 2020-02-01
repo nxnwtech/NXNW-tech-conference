@@ -330,9 +330,7 @@ body {
   }
   .papers-card__btn-wrapper {
     display: flex;
-    width: 200px;
-    padding: 15px;
-    border-radius: 5px;
+    margin: auto;
     justify-content: space-around;
     button {
       background-color: #0e153a;
