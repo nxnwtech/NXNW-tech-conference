@@ -22,10 +22,6 @@
         </ul>
       </div>
     </div>
-
-    <div class="papers-card__btn-wrapper">
-      <button class="btn btn--primary">Submit Talk</button>
-    </div>
   </div>
 </template>
 
@@ -64,23 +60,17 @@ export default {
       height: 1%; // for iphone white space fix
     }
   }
-.papers-card__content {
-  display: flex;
-  justify-content: space-around;
-}
-
-.papers-card__list {
-  font-size: 1.2em;
-  .papers-card__track-item {
-    padding: 0.25rem;
-    margin-bottom: 0.5rem;
-  }
-}
-
-  .papers-card__btn-wrapper {
+  .papers-card__content {
     display: flex;
     justify-content: space-around;
   }
-}
 
+  .papers-card__list {
+    font-size: 1.2em;
+    .papers-card__track-item {
+      padding: 0.25rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
 </style>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="753" height="568" viewBox="0 0 753 568">
+  <defs>
+    <clipPath id="clip-x-shapes">
+      <rect width="753" height="568"/>
+    </clipPath>
+  </defs>
+  <g id="x-shapes" clip-path="url(#clip-x-shapes)">
+    <g id="Group_1" data-name="Group 1" transform="translate(-922 -358)">
+      <g id="Layer_2" data-name="Layer 2" transform="translate(1160.998 505.002)">
+        <g id="Layer_1" data-name="Layer 1" transform="translate(0.002 -0.002)">
+          <rect id="Rectangle_5" data-name="Rectangle 5" width="53.533" height="136.024" transform="translate(0 37.854) rotate(-45)"/>
+          <rect id="Rectangle_6" data-name="Rectangle 6" width="53.533" height="136.024" transform="translate(140.962 178.812) rotate(-45)"/>
+          <rect id="Rectangle_7" data-name="Rectangle 7" width="53.533" height="136.024" transform="translate(237.138 0.008) rotate(45)"/>
+          <rect id="Rectangle_8" data-name="Rectangle 8" width="53.533" height="136.024" transform="translate(97.955 139.193) rotate(45)"/>
+        </g>
+      </g>
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="50" cy="50" r="50" transform="translate(940 792)" fill="#f04d7f"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="33" cy="33" r="33" transform="translate(1018 608)" fill="#f04d7f"/>
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="61" cy="61" r="61" transform="translate(1532 731)" fill="#f04d7f"/>
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="30" cy="30" r="30" transform="translate(1201 837)" fill="#f04d7f"/>
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="16.5" cy="16.5" r="16.5" transform="translate(1380 374)" fill="#f04d7f"/>
+      <circle id="Ellipse_6" data-name="Ellipse 6" cx="16.5" cy="16.5" r="16.5" transform="translate(1105 424)" fill="#f04d7f"/>
+      <circle id="Ellipse_7" data-name="Ellipse 7" cx="22" cy="22" r="22" transform="translate(1510 564)" fill="#f04d7f"/>
+    </g>
+  </g>
+</svg>

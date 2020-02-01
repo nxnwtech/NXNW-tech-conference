@@ -1,16 +1,17 @@
 <template>
   <div>
     <div>
-      <Navbar />
+      <Navbar :isNavOpen="isNavOpen" />
       <section id="landing-section" class="landing bg-color--primary">
         <div class="landing__hamburger">
-          <g-image src="/assets/hamburger-light.svg" alt="navigation menu icon" />
+          <g-image
+            src="/assets/hamburger-light.svg"
+            alt="navigation menu icon"
+            v-on:click="toggleNav"
+          />
         </div>
         <transition appear name="fade">
-          <g-image 
-          class="landing__logo" 
-          src="/assets/logo.png" 
-          alt="nxnw heading logo" />
+          <g-image class="landing__logo" src="/assets/logo.png" alt="nxnw heading logo" />
         </transition>
         <!-- <button class="btn btn--primary">Get Tickets</button> -->
       </section>
@@ -31,6 +32,9 @@
             </div>
           </div>
         </section>
+        <div class="split-logo">
+          <g-image src="/assets/x-shapes.svg" alt="navigation menu icon" />
+        </div>
         <!-- CALLFORPROPOSALSINTRO -->
         <section id="call-for-proposals-intro-section" class="callForProposalsIntro">
           <div v-for="edge in $page.callForProposalsIntro.edges" :key="edge.node.id">
@@ -58,7 +62,13 @@
               :track="edge.node"
             />
           </div>
+          <div class="papers-card__btn-wrapper">
+            <button class="btn">Submit Talk</button>
+          </div>
         </section>
+        <div class="split-logo">
+          <g-image src="/assets/x-shapes-2.svg" alt="navigation menu icon" />
+        </div>
 
         <!-- SPEAKERS -->
         <section id="speakers-section" class="speakers" v-if="showSpeakers">
@@ -246,7 +256,8 @@ export default {
     return {
       showPapers: true,
       showSpeakers: true,
-      showSchedule: true
+      showSchedule: true,
+      isNavOpen: false
     };
   },
   created() {
@@ -259,17 +270,24 @@ export default {
     }
   },
 
-  methods: {}
+  methods: {
+    toggleNav: function(event) {
+      console.log(123);
+      console.log(this.isNavOpen);
+      this.isNavOpen = !this.isNavOpen;
+      console.log(this.isNavOpen);
+    }
+  }
 };
 </script>
 
 <style lang="scss">
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 // landing
 .landing {
-  height: 70vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,19 +297,19 @@ body {
   }
 
   .landing__hamburger {
-    position: absolute;
-    top: 20px;
+    width: 100%;
+    background: #0e153a;
+    z-index: 2000;
+    position: fixed;
+    top: 0;
     left: -5px;
     img {
       width: 70px;
     }
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
   }
 
   .landing__logo {
-    width: 50%;
+    width: 70%;
     max-width: 350px;
   }
 }
@@ -304,6 +322,13 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
+  }
+  .papers-card__btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    button {
+      background-color: #0e153a;
+    }
   }
   @media screen and (max-width: 768px) {
     .papers__grid {
@@ -362,16 +387,14 @@ body {
   font-size: 1.2em;
 }
 
-.overlay {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
+.split-logo {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  img {
+    width: 20%;
+    min-width: 100px;
+    max-width: 300px;
+  }
 }
 </style>

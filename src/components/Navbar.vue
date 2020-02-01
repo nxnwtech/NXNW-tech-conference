@@ -1,44 +1,68 @@
 <template>
-  <nav class="navbar">
-    <!-- <div class="navbar__logo">LOGO</div> -->
-    <div class="container">
-      <div class="navbar__links">
+  <nav id="myNav" class="overlay" :class="isNavOpen ? 'is-open' : 'is-closed'">
+    <div class="overlay-content">
         <a href="#" class="navbar__item" v-scroll-to="'#about-section'">About</a>
         <a href="#" class="navbar__item" v-scroll-to="'#call-for-proposals-intro-section'">Call for Proposals</a>
         <!-- <a href="#" class="navbar__item" v-scroll-to="'#speakers-section'">Speakers</a>
         <a href="#" class="navbar__item" v-scroll-to="'#schedule-section'">Schedule</a> -->
         <a href="#" class="navbar__item" v-scroll-to="'#conduct-section'">Code Of Conduct</a>
         <!-- <a href="#" class="navbar__item" v-scroll-to="'#call-to-papers-section'">FAQ</a> -->
-      </div>
     </div>
   </nav>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["isNavOpen"]
+};
 </script>
 
 <style lang="scss">
-.navbar {
-  padding: 20px;
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
   background: #0e153a;
-  color: #fff;
-  font-size: 1.5em;
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  position: relative;
-  top: 10px;
-  top: 10px;
-  margin-top: -10px;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+  opacity: 0.9;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
 
-  .navbar__links {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
   }
+}
+
+.is-closed {
+  width: 0% !important;
+}
+.is-open {
+  width: 100% !important;
 }
 </style>
