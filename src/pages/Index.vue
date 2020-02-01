@@ -63,7 +63,7 @@
             />
           </div>
           <div class="papers-card__btn-wrapper">
-            <button class="btn" @click="submitTalk()">Submit Proposal</button>
+            <button class="btn font-bold" @click="submitTalk()">Submit Proposal</button>
           </div>
         </section>
         <!-- <div class="split-logo">
@@ -330,6 +330,9 @@ body {
   }
   .papers-card__btn-wrapper {
     display: flex;
+    width: 200px;
+    padding: 15px;
+    border-radius: 5px;
     justify-content: space-around;
     button {
       background-color: #0e153a;
