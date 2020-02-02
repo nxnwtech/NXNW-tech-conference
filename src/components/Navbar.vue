@@ -1,19 +1,24 @@
 <template>
   <nav id="myNav" class="overlay" :class="isNavOpen ? 'is-open' : 'is-closed'">
     <div class="overlay-content">
-        <a href="#" class="navbar__item" v-scroll-to="'#about-section'">About</a>
-        <a href="#" class="navbar__item" v-scroll-to="'#call-for-proposals-intro-section'">Call for Proposals</a>
-        <!-- <a href="#" class="navbar__item" v-scroll-to="'#speakers-section'">Speakers</a>
-        <a href="#" class="navbar__item" v-scroll-to="'#schedule-section'">Schedule</a> -->
-        <a href="#" class="navbar__item" v-scroll-to="'#conduct-section'">Code Of Conduct</a>
-        <!-- <a href="#" class="navbar__item" v-scroll-to="'#call-to-papers-section'">FAQ</a> -->
+        <a  v-on:click="toggleNav" href="#" class="navbar__item" v-scroll-to="'#about-section'">About</a>
+        <a v-on:click="toggleNav" href="#" class="navbar__item" v-scroll-to="'#call-for-proposals-intro-section'">Call for Proposals</a>
+        <!-- <a href="#" v-on:click="toggleNav" class="navbar__item" v-scroll-to="'#speakers-section'">Speakers</a>
+        <a href="#" v-on:click="toggleNav" class="navbar__item" v-scroll-to="'#schedule-section'">Schedule</a> -->
+        <a href="#" v-on:click="toggleNav" class="navbar__item" v-scroll-to="'#conduct-section'">Code Of Conduct</a>
+        <!-- <a href="#" v-on:click="toggleNav" class="navbar__item" v-scroll-to="'#call-to-papers-section'">FAQ</a> -->
     </div>
   </nav>
 </template>
 
 <script>
 export default {
-  props: ["isNavOpen"]
+  props: ["isNavOpen"],
+  methods: {
+    toggleNav: function() {
+       this.$emit('navItemClicked', false)
+    }
+  },
 };
 </script>
 

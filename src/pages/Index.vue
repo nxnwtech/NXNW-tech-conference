@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <Navbar :isNavOpen="isNavOpen" />
+      <Navbar :isNavOpen="isNavOpen" @navItemClicked="navItemClicked" />
       <section id="landing-section" class="landing bg-color--primary">
         <div class="landing__hamburger">
           <g-image
@@ -32,9 +32,9 @@
             </div>
           </div>
         </section>
-        <!-- <div class="split-logo">
+        <div class="split-logo">
           <g-image src="/assets/x-shapes.svg" alt="navigation menu icon" />
-        </div> -->
+        </div>
         <!-- CALLFORPROPOSALSINTRO -->
         <section id="call-for-proposals-intro-section" class="callForProposalsIntro">
           <div v-for="edge in $page.callForProposalsIntro.edges" :key="edge.node.id">
@@ -63,12 +63,12 @@
             />
           </div>
           <div class="papers-card__btn-wrapper">
-            <button class="btn font-bold" @click="submitTalk()">Submit Proposal</button>
+            <button class="btn">Submit Talk</button>
           </div>
         </section>
-        <!-- <div class="split-logo">
+        <div class="split-logo">
           <g-image src="/assets/x-shapes-2.svg" alt="navigation menu icon" />
-        </div> -->
+        </div>
 
         <!-- SPEAKERS -->
         <section id="speakers-section" class="speakers" v-if="showSpeakers">
@@ -236,12 +236,12 @@ import Navbar from "~/components/Navbar.vue";
 
 export default {
   metaInfo: {
-    title: "NxNWTech X 2020",
+    title: "North by North West Tech Conference 2020",
     meta: [
       {
         name: "description",
         content:
-          "Find information about the NxNWTech X 2020 Conference, including call to papers, speakers, schedule, and sponsors"
+          "Find information about the North by North West Tech Conference, including call to papers, speakers, schedule, and sponsors"
       }
     ]
   },
@@ -272,18 +272,13 @@ export default {
 
   methods: {
     toggleNav: function(event) {
-      console.log(123);
-      console.log(this.isNavOpen);
       this.isNavOpen = !this.isNavOpen;
-      console.log(this.isNavOpen);
     },
-
-    submitTalk: function () {   
-          window.open("https://forms.gle/RZpPj7r1udgGqrCeA", "_blank");    
-      }
+    navItemClicked: function() {
+      this.isNavOpen = false;
+    }
   }
 };
-
 </script>
 
 <style lang="scss">
@@ -330,7 +325,6 @@ body {
   }
   .papers-card__btn-wrapper {
     display: flex;
-    margin: auto;
     justify-content: space-around;
     button {
       background-color: #0e153a;
@@ -396,7 +390,7 @@ body {
 .split-logo {
   display: flex;
   justify-content: space-around;
-  // margin-bottom: 20px;
+  margin-bottom: 20px;
   img {
     width: 20%;
     min-width: 100px;
