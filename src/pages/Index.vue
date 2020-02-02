@@ -32,9 +32,9 @@
             </div>
           </div>
         </section>
-        <div class="split-logo">
+        <!-- <div class="split-logo">
           <g-image src="/assets/x-shapes.svg" alt="navigation menu icon" />
-        </div>
+        </div> -->
         <!-- CALLFORPROPOSALSINTRO -->
         <section id="call-for-proposals-intro-section" class="callForProposalsIntro">
           <div v-for="edge in $page.callForProposalsIntro.edges" :key="edge.node.id">
@@ -63,12 +63,12 @@
             />
           </div>
           <div class="papers-card__btn-wrapper">
-            <button class="btn">Submit Talk</button>
+            <button class="btn font-bold" @click="submitTalk()">Submit Proposal</button>
           </div>
         </section>
-        <div class="split-logo">
+        <!-- <div class="split-logo">
           <g-image src="/assets/x-shapes-2.svg" alt="navigation menu icon" />
-        </div>
+        </div> -->
 
         <!-- SPEAKERS -->
         <section id="speakers-section" class="speakers" v-if="showSpeakers">
@@ -236,12 +236,12 @@ import Navbar from "~/components/Navbar.vue";
 
 export default {
   metaInfo: {
-    title: "North by North West Tech Conference 2020",
+    title: "nxnwtech X 2020",
     meta: [
       {
         name: "description",
         content:
-          "Find information about the North by North West Tech Conference, including call to papers, speakers, schedule, and sponsors"
+          "Find information about the nxnwtech X 2020 Conference, including call to papers, speakers, schedule, and sponsors"
       }
     ]
   },
@@ -276,6 +276,9 @@ export default {
     },
     navItemClicked: function() {
       this.isNavOpen = false;
+    },
+    submitTalk: function () {   
+      window.open("https://forms.gle/RZpPj7r1udgGqrCeA", "_blank");    
     }
   }
 };
@@ -325,6 +328,7 @@ body {
   }
   .papers-card__btn-wrapper {
     display: flex;
+    margin: auto;
     justify-content: space-around;
     button {
       background-color: #0e153a;
