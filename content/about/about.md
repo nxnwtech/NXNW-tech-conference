@@ -1,7 +1,7 @@
 ---
-title: About NXNWTech X
+title: About nxnwtech X
 content: >-
-  **NxNWTech X** is a one day, technology themed, not for profit, community
+  **nxnwtech X** is a one day, technology themed, not for profit, community
   conference to be hosted in LYIT Campus on Thursday 4th June 2020.
 
 
