@@ -81,11 +81,13 @@ body {
 }
 
 .btn {
-  color: #fff;
+  color: rgba(131, 128, 128, 0.116);
   margin-top: 30px;
   width: 200px;
   padding: 15px;
   border-radius: 5px;
+  border-color: solid #41c62a;
+  border-width: 5px;
 }
 
 .btn--primary {

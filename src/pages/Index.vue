@@ -331,7 +331,7 @@ body {
     margin: auto;
     justify-content: space-around;
     button {
-      background-color: #0e153a;
+      background-color: #ffffff;
     }
   }
   @media screen and (max-width: 768px) {
