@@ -13,6 +13,7 @@
 
 module.exports = {
   siteName: 'NXNW',
+  icon: './static/assets/favicon.png',
   plugins: [
     // Speakers 
     {
