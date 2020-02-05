@@ -38,4 +38,24 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap'
   })
+  head.meta.push({
+    key: 'og:image',
+    name: 'og:image',
+    content: './static/assets/favicon.png',
+  })
+  head.meta.push({
+    key: 'og:image:type',
+    name: 'og:image:type',
+    content: 'image/png',
+  })
+  head.meta.push({
+    key: 'og:image:width',
+    name: 'og:image:width',
+    content: '1024',
+  })
+  head.meta.push({
+    key: 'og:image:height',
+    name: 'og:image:height',
+    content: '1024',
+  })
 }
