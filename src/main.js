@@ -41,7 +41,7 @@ export default function (Vue, { router, head, isClient }) {
   head.meta.push({
     key: 'og:image',
     name: 'og:image',
-    content: './static/assets/favicon.png',
+    content: '~/assets/favicon.png',
   })
   head.meta.push({
     key: 'og:image:type',
