@@ -39,9 +39,24 @@ export default function (Vue, { router, head, isClient }) {
     href: 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap'
   })
   head.meta.push({
+    key: 'og:title',
+    name: 'og:title',
+    content: 'nxnwtech X Conference',
+  })
+  head.meta.push({
+    key: 'og:description',
+    name: 'og:description',
+    content: 'nxnwtech X is a one day, technology themed, not for profit, community conference to be hosted in LYIT Campus on Thursday 4th June 2020.',
+  })
+  head.meta.push({
+    key: 'og:url',
+    name: 'og:url',
+    content: 'https://www.nxnwtech.com',
+  })
+  head.meta.push({
     key: 'og:image',
     name: 'og:image',
-    content: '~/assets/favicon.png',
+    content: 'https://www.nxnwtech.com/assets/favicon.png',
   })
   head.meta.push({
     key: 'og:image:type',
@@ -59,3 +74,4 @@ export default function (Vue, { router, head, isClient }) {
     content: '1024',
   })
 }
+
