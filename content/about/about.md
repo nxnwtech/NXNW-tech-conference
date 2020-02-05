@@ -5,8 +5,8 @@ content: >-
   conference to be hosted in LYIT Campus on Thursday 4th June 2020.
 
 
-  Tech X will bring a broad range of high quality technology keynotes, talks and
-  workshops in an engaging format. The emphasis will be on creating a
+  **nxnwtech X** will bring a broad range of high quality technology keynotes,
+  talks and workshops in an engaging format. The emphasis will be on creating a
   stimulating environment for the NxNW community to get together and enjoy the
   Xperience.
 
