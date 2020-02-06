@@ -61,22 +61,25 @@ export default function (Vue, { router, head, isClient }) {
     key: 'og:image',
     name: 'image',
     property: 'og:image',
-    content: 'https://www.nxnwtech.com/assets/favicon.png/?1',
+    content: 'https://www.nxnwtech.com/assets/favicon.png',
   })
-  // head.meta.push({
-  //   key: 'og:image:type',
-  //   name: 'og:image:type',
-  //   content: 'image/png',
-  // })
-  // head.meta.push({
-  //   key: 'og:image:width',
-  //   name: 'og:image:width',
-  //   content: '1024',
-  // })
-  // head.meta.push({
-  //   key: 'og:image:height',
-  //   name: 'og:image:height',
-  //   content: '1024',
-  // })
+  head.meta.push({
+    key: 'og:image:type',
+    name: 'image:type',
+    property: 'og:image:type',
+    content: 'image/png',
+  })
+  head.meta.push({
+    key: 'og:image:width',
+    name: 'image:width',
+    property: 'og:image:width',
+    content: '1024',
+  })
+  head.meta.push({
+    key: 'og:image:height',
+    name: 'image:height',
+    property: 'og:image:height',
+    content: '1024',
+  })
 }
 
