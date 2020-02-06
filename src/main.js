@@ -48,13 +48,13 @@ export default function (Vue, { router, head, isClient }) {
   head.meta.push({
     key: 'og:description',
     name: 'description',
-    property="og:description",
+    property:"og:description",
     content: 'nxnwtech X is a one day, technology themed, not for profit, community conference to be hosted in LYIT Campus on Thursday 4th June 2020.',
   })
   head.meta.push({
     key: 'og:url',
     name: 'url',
-    property="og:url",
+    property:"og:url",
     content: 'https://www.nxnwtech.com',
   })
   head.meta.push({
