@@ -43,43 +43,73 @@ export default function (Vue, { router, head, isClient }) {
     key: 'og:title',
     name: 'title',
     property: 'og:title',
-    content: 'nxnwtech X Conference',
+    content: 'nxnwtech X Conference'
   })
   head.meta.push({
     key: 'og:description',
     name: 'description',
     property:"og:description",
-    content: 'nxnwtech X is a one day, technology themed, not for profit, community conference to be hosted in LYIT Campus on Thursday 4th June 2020.',
+    content: 'nxnwtech X is a one day, technology themed, not for profit, community conference to be hosted in LYIT Campus on Thursday 4th June 2020.'
   })
   head.meta.push({
     key: 'og:url',
     name: 'url',
     property:"og:url",
-    content: 'https://www.nxnwtech.com',
+    content: 'https://www.nxnwtech.com'
   })
   head.meta.push({
     key: 'og:image',
     name: 'image',
     property: 'og:image',
-    content: 'https://www.nxnwtech.com/assets/favicon.png',
+    content: 'https://www.nxnwtech.com/assets/logo.png'
   })
   head.meta.push({
     key: 'og:image:type',
     name: 'image:type',
     property: 'og:image:type',
-    content: 'image/png',
+    content: 'image/png'
   })
   head.meta.push({
     key: 'og:image:width',
     name: 'image:width',
     property: 'og:image:width',
-    content: '1024',
+    content: '1024'
   })
   head.meta.push({
     key: 'og:image:height',
     name: 'image:height',
     property: 'og:image:height',
-    content: '1024',
+    content: '1024'
+  })
+
+  head.meta.push({
+    key: 'twitter:card',
+    name: 'twitter:card',
+    property: 'twitter:card',
+    content: 'summary_large_image'
+  })
+  head.meta.push({
+    key: 'twitter:site',
+    name: 'twitter:site',
+    property: 'twitter:site',
+    content: '@nxnwtech'
+  })
+  head.meta.push({
+    key: 'twitter:title',
+    name: 'twitter:title',
+    property: 'twitter:title',
+    content: 'nxnwtech X Conference'
+  })
+  head.meta.push({
+    key: 'twitter:description',
+    name: 'twitter:description',
+    property: 'twitter:description',
+    content: 'nxnwtech X is a one day, technology themed, not for profit, community conference to be hosted in LYIT Campus on Thursday 4th June 2020.'
+  })
+  head.meta.push({
+    key: 'twitter:image',
+    name: 'twitter:image',
+    property: 'twitter:image',
+    content: 'https://www.nxnwtech.com/assets/logo.png'
   })
 }
-
