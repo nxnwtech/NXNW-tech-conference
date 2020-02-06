@@ -38,40 +38,45 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap'
   })
+
   head.meta.push({
     key: 'og:title',
-    name: 'og:title',
+    name: 'title',
+    property: 'og:title',
     content: 'nxnwtech X Conference',
   })
   head.meta.push({
     key: 'og:description',
-    name: 'og:description',
+    name: 'description',
+    property="og:description",
     content: 'nxnwtech X is a one day, technology themed, not for profit, community conference to be hosted in LYIT Campus on Thursday 4th June 2020.',
   })
   head.meta.push({
     key: 'og:url',
-    name: 'og:url',
+    name: 'url',
+    property="og:url",
     content: 'https://www.nxnwtech.com',
   })
   head.meta.push({
     key: 'og:image',
-    name: 'og:image',
-    content: 'https://www.nxnwtech.com/assets/favicon.png',
+    name: 'image',
+    property: 'og:image',
+    content: 'https://www.nxnwtech.com/assets/favicon.png/?1',
   })
-  head.meta.push({
-    key: 'og:image:type',
-    name: 'og:image:type',
-    content: 'image/png',
-  })
-  head.meta.push({
-    key: 'og:image:width',
-    name: 'og:image:width',
-    content: '1024',
-  })
-  head.meta.push({
-    key: 'og:image:height',
-    name: 'og:image:height',
-    content: '1024',
-  })
+  // head.meta.push({
+  //   key: 'og:image:type',
+  //   name: 'og:image:type',
+  //   content: 'image/png',
+  // })
+  // head.meta.push({
+  //   key: 'og:image:width',
+  //   name: 'og:image:width',
+  //   content: '1024',
+  // })
+  // head.meta.push({
+  //   key: 'og:image:height',
+  //   name: 'og:image:height',
+  //   content: '1024',
+  // })
 }
 
