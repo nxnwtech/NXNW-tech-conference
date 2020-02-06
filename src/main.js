@@ -61,7 +61,7 @@ export default function (Vue, { router, head, isClient }) {
     key: 'og:image',
     name: 'image',
     property: 'og:image',
-    content: 'https://www.nxnwtech.com/assets/logo.png'
+    content: 'https://www.nxnwtech.com/assets/social-card-logo.png'
   })
   head.meta.push({
     key: 'og:image:type',
@@ -110,6 +110,6 @@ export default function (Vue, { router, head, isClient }) {
     key: 'twitter:image',
     name: 'twitter:image',
     property: 'twitter:image',
-    content: 'https://www.nxnwtech.com/assets/logo.png'
+    content: 'https://www.nxnwtech.com/assets/social-card-logo.png'
   })
 }
