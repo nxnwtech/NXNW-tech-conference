@@ -305,7 +305,6 @@ body {
     z-index: 2000;
     position: fixed;
     top: 0;
-    left: -5px;
     img {
       width: 70px;
     }
@@ -330,8 +329,19 @@ body {
     display: flex;
     margin: auto;
     justify-content: space-around;
+    margin-top: 30px;
     button {
       background-color: #ffffff;
+      border: 3px solid #0e153a;
+      transition: 0.3s;
+      &:hover {
+        background-color: #0e153a;
+        color: #41c62a;
+        transition: 0.3s;
+      }
+      &:focus {
+        outline: none;
+      }
     }
   }
   @media screen and (max-width: 768px) {

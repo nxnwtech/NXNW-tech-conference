@@ -42,6 +42,7 @@ export default {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+  white-space: nowrap;
 }
 
 .overlay a {
