@@ -278,7 +278,7 @@ export default {
       this.isNavOpen = false;
     },
     submitTalk: function () {   
-      window.open("https://forms.gle/RZpPj7r1udgGqrCeA", "_blank");    
+      window.open("https://forms.gle/RZpPj7r1udgGqrCeA", "_self");    
     }
   }
 };
