@@ -1,6 +1,6 @@
 # Default starter for Gridsome
 
-## NXNW Site
+## NXNW Site Test
 
 ### 1. Install Gridsome CLI tool if you don't have
 
