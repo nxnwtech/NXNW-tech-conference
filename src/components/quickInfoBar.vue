@@ -6,7 +6,7 @@
     </div>
     <div class="info-box__item">
       <g-image class="info-icon" src="/assets/calendar.svg" alt="conferenece location" />
-      <h1 class="font-bold">4th June 2020</h1>
+      <h1 class="font-bold">3rd June 2021</h1>
     </div>
     <div class="info-box__item">
       <g-image class="info-icon" src="/assets/speakers.svg" alt="conferenece location" />

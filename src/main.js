@@ -51,7 +51,7 @@ export default function (Vue, { router, head, isClient }) {
     key: 'og:description',
     name: 'description',
     property:"og:description",
-    content: 'nxnwtech X is a one day, technology themed, not for profit, community conference to be hosted in LYIT Campus on Thursday 4th June 2020.'
+    content: 'nxnwtech X is a one day, technology themed, not for profit, community conference to be hosted in LYIT Campus on Thursday 3rd June 2021.'
   })
   head.meta.push({
     key: 'og:url',
@@ -106,7 +106,7 @@ export default function (Vue, { router, head, isClient }) {
     key: 'twitter:description',
     name: 'twitter:description',
     property: 'twitter:description',
-    content: 'nxnwtech X is a one day, technology themed, not for profit, community conference to be hosted in LYIT Campus on Thursday 4th June 2020.'
+    content: 'nxnwtech X is a one day, technology themed, not for profit, community conference to be hosted in LYIT Campus on Thursday 3rd June 2021.'
   })
   head.meta.push({
     key: 'twitter:image',

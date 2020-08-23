@@ -236,12 +236,12 @@ import Navbar from "~/components/Navbar.vue";
 
 export default {
   metaInfo: {
-    title: "nxnwtech X 2020",
+    title: "nxnwtech X 2021",
     meta: [
       {
         name: "description",
         content:
-          "Find information about the nxnwtech X 2020 Conference, including call to papers, speakers, schedule, and sponsors"
+          "Find information about the nxnwtech X 2021 Conference, including call to papers, speakers, schedule, and sponsors"
       }
     ]
   },
