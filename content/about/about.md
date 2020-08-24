@@ -2,7 +2,7 @@
 title: About nxnwtech X
 content: >-
   **nxnwtech X** is a one day, technology themed, not for profit, community
-  conference to be hosted in LYIT Campus on Thursday 4th June 2020.
+  conference to be hosted in LYIT Campus on Thursday 3rd June 2021.
 
 
   **nxnwtech X** will bring a broad range of high quality technology keynotes,
