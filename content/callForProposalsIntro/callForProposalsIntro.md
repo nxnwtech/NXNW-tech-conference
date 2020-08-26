@@ -13,7 +13,7 @@ content: >-
   Talks can be 30 mins or 10 mins lightening talks. 
 
 
-  The Call for Proposals will close open in **January 2021**. 
+  The Call for Proposals will open on **January 2021**. 
 
 
   We've listed suggested themes below and are looking forward to your proposals!
